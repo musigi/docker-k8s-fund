@@ -128,9 +128,17 @@ $ kubectl exec -it redis redis-cli
 127.0.0.1:6379> CONFIG GET maxmemory-policy
 1) "maxmemory-policy"
 2) "allkeys-lru"
-127.0.0.1:6379> 
+127.0.0.1:6379> exit
+
+$ kubectl exec redis -c redis /bin/bash -i -t
+root@redis:/data# cat /redis-master/redis.conf 
+maxmemory 2mb
+maxmemory-policy allkeys-lru
+root@redis:/data# exit
+
 
 ```
+
 
 
 
