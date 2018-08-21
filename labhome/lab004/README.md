@@ -187,7 +187,7 @@ Data
 password:  17 bytes
 username:  16 bytes
 
-$ cat secret-test-pod.yaml
+$ cat secret-test-pod.yml
 apiVersion: v1
 kind: Pod
 metadata:
