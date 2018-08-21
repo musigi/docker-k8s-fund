@@ -131,10 +131,11 @@ $ kubectl exec -it redis redis-cli
 127.0.0.1:6379> exit
 
 $ kubectl exec redis -c redis /bin/bash -i -t
+$ kubectl exec -it redis /bin/bash 
 root@redis:/data# cat /redis-master/redis.conf 
 maxmemory 2mb
 maxmemory-policy allkeys-lru
-root@redis:/data# exit
+root@redis:/data#
 
 
 ```
