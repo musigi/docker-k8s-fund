@@ -113,6 +113,8 @@ spec:
         - key: redis-config
           path: redis.conf
 
+$ kubectl create -f redis-pod.yml 
+pod "redis" created
 
 $ kubectl get pod
 NAME      READY     STATUS    RESTARTS   AGE
